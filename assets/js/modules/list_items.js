@@ -1,32 +1,27 @@
-import function addListItems(){
-	//this array will hold the list items
-	let listItems = [];
+//Exporting the constance used for the addEventListener
+export const listButton = document.getElementById('listAdd');
 
-	function addList(text) {
-		const list = {
-			text,
-			id: Date.now(),
-		};
+//Constances used by the addList function
+const inputBoxList = document.getElementById('input-box-list');
+export	const listContainer = document.getElementById('list-container');
 
-		listItems.push(list);
-		console.log(listItems);
+//The functon first check if the user insert a value
+	export function addList(){
+		if(inputBoxList.value === ''){
+			alert("Please, write something.");
+		}
+//If it is not null, it creates a list element with the name of this value
+		else{
+			let li = document.createElement('li');
+			li.setAttribute('class','list__type');
+			li.innerHTML = inputBoxList.value;
+			listContainer.appendChild(li);
+			let span = document.createElement('span');
+			span.innerText = "\u00d7";
+			li.appendChild(span);
+		}
+//after the condition is validate, the input box is cleared
+		inputBoxList.value = '';
 	}
-	//Select the form element
-	const form = document.querySelector('.js-form');
-	//Add a submit event listener
-	form.addEventListener('submit', event => {
-		//preventing page refresh on submission form
-		event.preventDefault();
-		//select the text input
-		const input = document.querySelector('.js-list-input');
 
-		// Get the valie of the input and remove whitespace
-		const text = input.value.trim();
-		if (text !== '') {
-			addList(text);
-			input.value = '';
-			input.focus();
-			}
-
-		});
-}
+	
