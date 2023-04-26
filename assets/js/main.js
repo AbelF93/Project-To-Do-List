@@ -1,3 +1,3 @@
 //Import Modules
-
-    import {addListItems} from './modules/list_items.js';
+import {listButton,addList} from './modules/list_items.js';
+listButton.addEventListener("click",addList);
