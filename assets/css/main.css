@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#listAdd {
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 2.5em;
+  border: 8px solid black;
+  border-radius: 15px;
+  background: linear-gradient(#FF9100, #FFC400, #FFC200);
+  text-shadow: 0 0 0 black;
+  box-shadow: 2px 2px 15px black;
+  cursor: pointer;
+}
+#listAdd:hover {
+  transform: scale(1.18);
+  transition: all 1s ease-in-out;
+}
+
+@font-face {
+  font-family: "Bauhaus";
+  src: url("/font/BauhausRegular.ttf"), url("/font/BauhausBold.ttf"), url("/font/BauhausItalic.ttf"), url("/font/BauhausBoldItalic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 30px;
+  background: linear-gradient(#FF9100, #FFC400, #FFC200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding: 20px 10px 20px 10px;
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 3.8em;
+  text-shadow: 2px 2px 15px black;
+  box-shadow: 0 0 0 black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  width: 93%;
+  padding: 20px 10px 20px 10px;
+}
+
+#input-box-list {
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 2.5em;
+  border-color: transparent;
+  background-color: transparent;
+  max-width: 250px;
+}
+#input-box-list::placeholder {
+  color: black;
+}
+
+input {
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 0.8em;
+  border-color: transparent;
+  background-color: transparent;
+  max-width: 250px;
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+ul li {
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 2.5em;
+  padding-left: 70px;
+  padding-bottom: 40px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background-image: url(/images/list_marker.svg);
+  background-size: cover;
+  background-position: center;
+  top: -10px;
+  left: 15px;
+}
+
+.task {
+  font-family: "Bauhaus";
+  font-weight: 999;
+  font-size: 0.8em;
+}
+.task::before {
+  background-image: url(/images/unchecked_marker.svg);
+}
+
+.checked::before {
+  background-image: url(/images/checked_marker.svg);
+}
+
+.checked {
+  text-decoration: line-through;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,1 @@
+This is a solo project which consist on using basically all the knowledge used in the formation to make a to-do list.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: To Do List</title>
+    <script type="module" defer src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">     
+</head>
+<body>
+    <header>
+        <h1>What You do ?</h1>
+        
+    </header>
+    <main class="container">
+        <button id="listAdd">Create a new list ?</button>
+        <div class="row">
+            <svg height="50" width="50">
+                <circle cx="25" cy="25" r="10" stroke="black" stroke-width="10"/>
+            </svg> 
+            <input type="input" id="input-box-list" placeholder="New list">
+        </div>
+        <ul class="list-container">
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>
+                list 3
+                <ul class="task-container">
+                    <div class="row">
+                        <svg height="50" width="50">
+                            <circle cx="25" cy="25" r="10" stroke="black" stroke-width="10"/>
+                        </svg> 
+                    <input type="input" id="input-box-task" placeholder="New task">
+                    </div>
+                    <li class="task checked">task 1</li>
+                    <li class="task">task 2</li>
+                </ul>
+            </li>
+        </ul>
+    </main>  
+    <footer></footer>
+</body>
+</html>

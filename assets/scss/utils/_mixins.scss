@@ -1,0 +1,25 @@
+@mixin base-font($size){
+    font-family: 'Bauhaus';
+    font-weight: 999;
+    font-size: $size;
+}
+
+@mixin cast-shadow($text-decal,$text-blur,$box-decal,$box-blur){
+   text-shadow:  $text-decal $text-decal $text-blur black;
+   box-shadow: $box-decal $box-decal $box-blur black;
+}
+
+@mixin background-gradient{
+    background: linear-gradient(#FF9100,#FFC400,#FFC200,);
+}
+
+@mixin standard-padding{
+    padding: 20px 10px 20px 10px;
+}
+
+@mixin globalFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

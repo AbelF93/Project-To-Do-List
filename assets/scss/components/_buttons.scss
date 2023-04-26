@@ -1,0 +1,12 @@
+#listAdd{
+    @include base-font (2.5em);
+    border: 8px solid black;
+    border-radius: 15px;
+    @include background-gradient;
+    @include cast-shadow(0,0,2px,15px);
+    cursor: pointer;
+    &:hover{
+       transform: scale(1.18);
+       transition: all 1s ease-in-out;
+    }
+}

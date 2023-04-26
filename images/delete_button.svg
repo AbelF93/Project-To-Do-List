@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="header">
+    </g>
+    <g id="Plan-de-travail1" serif:id="Plan de travail1" transform="matrix(0.297223,0,0,0.297223,-473.869,-235.261)">
+        <rect x="1594.32" y="791.53" width="603.006" height="603.006" style="fill:none;"/>
+        <g id="Delete-Button" serif:id="Delete Button" transform="matrix(3.36448,0,0,3.36448,-5658.9,-2404.15)">
+            <g transform="matrix(0.642791,0,0,0.732093,854.03,127.066)">
+                <path d="M2128.56,1210.71L2196.34,1278.49" style="fill:none;stroke:black;stroke-width:31.45px;"/>
+            </g>
+            <g transform="matrix(1.18119e-15,0.732093,-0.642791,1.34529e-15,3044.06,-544.885)">
+                <path d="M2128.56,1210.71L2196.34,1278.49" style="fill:none;stroke:black;stroke-width:31.45px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+@font-face{
+    font-family: 'Bauhaus';
+    src: url('/font/BauhausRegular.ttf'), url('/font/BauhausBold.ttf'), url('/font/BauhausItalic.ttf'), url('/font/BauhausBoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 30px;
+    @include background-gradient;
+    @include globalFlex;
+}
+
+h1{
+    @include standard-padding;
+    @include base-font (3.8em);
+    @include cast-shadow(2px,15px,0,0);
+}
+
+
+
+.container{
+   @include globalFlex;
+}
+.row{
+    display: flex;
+    width: 93%;
+    @include standard-padding;
+}
+
+
+#input-box-list{
+    @include base-font(2.5em);
+    border-color: transparent;
+    background-color: transparent;
+    max-width: 250px;
+    &::placeholder{
+        color: black;
+    }
+}
+input{
+    @include base-font(0.8em);
+    border-color: transparent;
+    background-color: transparent;
+    max-width: 250px;
+    &::placeholder{
+        color: rgb(0, 0, 0);
+    };
+}
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    li{
+        @include base-font(2.5em);
+        padding-left: 70px;
+        padding-bottom: 40px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px; 
+            background-image: url(/images/list_marker.svg);
+            background-size: cover;
+            background-position: center;
+            top:-10px;
+            left: 15px;
+        }    
+    }
+}
+
+.task{
+    @include base-font(0.8em);
+    &::before{
+    background-image: url(/images/unchecked_marker.svg);
+    }
+}
+.checked::before{
+    background-image: url(/images/checked_marker.svg);
+}
+.checked{
+    text-decoration: line-through;
+}
