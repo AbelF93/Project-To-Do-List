@@ -60,6 +60,9 @@ ul{
         @include base-font(2.5em);
         padding-left: 70px;
         padding-bottom: 40px;
+        width: 300px;
+        word-break:break-all;
+        line-break:strict;
         user-select: none;
         cursor: pointer;
         position: relative;
@@ -69,10 +72,9 @@ ul{
             height: 50px;
             width: 50px;
             border-radius: 5px; 
-            background-image: url(/images/list_marker.svg);
+            background-image: url(/images/unchecked_marker.svg);
             background-size: cover;
             background-position: center;
-            top:-10px;
             left: 15px;
         }    
     }

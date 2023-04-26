@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: To Do List</title>
-    <script type="module" src="/assets/js/main.js"></script>
+    <script type="module" defer src="/assets/js/main.js"></script>
     <link rel="stylesheet" href="/assets/css/main.css">     
 </head>
 <body>
@@ -14,12 +14,11 @@
         
     </header>
     <main class="container">
-        <button id="listAdd" >Create a new list ?</button>
+        <button id="listAdd" >Create a new task ?</button>
         <div class="row">
-            <svg height="50" width="50">
-                <circle cx="25" cy="25" r="10" stroke="black" stroke-width="10"/>
-            </svg> 
-            <input type="input" id="input-box-list" placeholder="New list">
+            <img src="/images/new_task_marker.svg" height="50" width="50">
+        
+            <input type="input" id="input-box-list" placeholder="New task">
         </div>
         <ul id="list-container">
             <!-- <li>list 1</li>

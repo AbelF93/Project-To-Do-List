@@ -65,7 +65,26 @@ table {
 }
 #listAdd:hover {
   transform: scale(1.18);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+span {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  background-image: url(/images/delete_button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1.2em;
+  color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+span:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 @font-face {
@@ -141,6 +160,9 @@ ul li {
   font-size: 2.5em;
   padding-left: 70px;
   padding-bottom: 40px;
+  width: 300px;
+  word-break: break-all;
+  line-break: strict;
   user-select: none;
   cursor: pointer;
   position: relative;
@@ -151,10 +173,9 @@ ul li::before {
   height: 50px;
   width: 50px;
   border-radius: 5px;
-  background-image: url(/images/list_marker.svg);
+  background-image: url(/images/unchecked_marker.svg);
   background-size: cover;
   background-position: center;
-  top: -10px;
   left: 15px;
 }
 
