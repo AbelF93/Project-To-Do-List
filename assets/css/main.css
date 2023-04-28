@@ -131,7 +131,7 @@ h1 {
   font-family: "Bauhaus";
   font-weight: 999;
   font-size: 3.3em;
-  background-image: url("images/header-background.png");
+  background-image: url('images/header-background.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 219px 0;
@@ -200,7 +200,7 @@ ul li::before {
   height: 40px;
   width: 40px;
   border-radius: 5px;
-  background-image: url("images/list-marker.svg");
+  background-image: url('images/list-marker.svg');
   background-size: cover;
   background-position: center;
 }
@@ -216,7 +216,7 @@ ul li::before {
 }
 
 .checked::before {
-  background-image: url("images/checked-marker.svg");
+  background-image: url('images/checked-marker.svg');
 }
 
 .checked {
