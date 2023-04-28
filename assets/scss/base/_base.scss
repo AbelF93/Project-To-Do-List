@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'Bauhaus';
-    src: url('font/BauhausRegular.ttf');
+    src: url('../font/BauhausRegular.ttf');
     font-weight: normal;
     font-style: normal;
     }
@@ -17,7 +17,7 @@ body{
 h1{
     @include standard-padding;
     @include base-font (3.3em);
-    background-image: url('images/header-background.png');
+    background-image: url('../images/header-background.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 219px 0;
@@ -78,7 +78,7 @@ ul{
             height: 40px;
             width: 40px;
             border-radius: 5px; 
-            background-image: url('images/list-marker.svg');
+            background-image: url('../images/list-marker.svg');
             background-size: cover;
             background-position: center;
             
@@ -99,7 +99,7 @@ ul{
 
 //switching to checked mode
 .checked::before{
-    background-image: url('images/checked-marker.svg');
+    background-image: url('../images/checked-marker.svg');
 }
 .checked{
     text-decoration: line-through;
