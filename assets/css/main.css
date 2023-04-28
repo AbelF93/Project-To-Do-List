@@ -76,7 +76,7 @@ table {
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
-  background-image: url("/images/delete_button.svg");
+  background-image: url("./images/delete_button.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1.2em;
@@ -97,7 +97,7 @@ table {
   top: -6px;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
-  background-image: url("/images/display_button.svg");
+  background-image: url("./images/display_button.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1.2em;
@@ -112,7 +112,7 @@ table {
 
 @font-face {
   font-family: "Bauhaus";
-  src: url("/font/BauhausRegular.ttf");
+  src: url("./font/BauhausRegular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -131,7 +131,7 @@ h1 {
   font-family: "Bauhaus";
   font-weight: 999;
   font-size: 3.3em;
-  background-image: url("/images/header_background.png");
+  background-image: url("./images/header_background.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 219px 0;
@@ -200,7 +200,7 @@ ul li::before {
   height: 40px;
   width: 40px;
   border-radius: 5px;
-  background-image: url("/images/list_marker.svg");
+  background-image: url("./images/list_marker.svg");
   background-size: cover;
   background-position: center;
 }
@@ -216,7 +216,7 @@ ul li::before {
 }
 
 .checked::before {
-  background-image: url("/images/checked_marker.svg");
+  background-image: url("./images/checked_marker.svg");
 }
 
 .checked {
