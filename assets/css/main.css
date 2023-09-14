@@ -201,7 +201,7 @@ ul li::before {
   width: 40px;
   border-radius: 5px;
 
-  background-image: url(./images/unchecked_marker.svg);
+  background-image: url(./images/list_marker.svg);
 
   background-size: cover;
   background-position: center;
