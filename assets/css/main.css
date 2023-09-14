@@ -200,7 +200,9 @@ ul li::before {
   height: 40px;
   width: 40px;
   border-radius: 5px;
-  background-image: url("/images/list-marker.svg");
+
+  background-image: url(./images/unchecked_marker.svg);
+
   background-size: cover;
   background-position: center;
 }
@@ -211,12 +213,13 @@ ul li::before {
   padding-right: 20px;
 }
 
-.task-container__task-input {
-  display: none;
+.task::before {
+  background-image: url(./images/unchecked_marker.svg);
 }
 
 .checked::before {
-  background-image: url("/images/checked-marker.svg");
+  background-image: url(./images/checked_marker.svg);
+
 }
 
 .checked {
